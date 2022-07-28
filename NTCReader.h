@@ -9,11 +9,13 @@ class NTCReader {
 		double read();
 		double getMin();
 		double getMax();
-		double R1=10000.0;
-		double V_IN=5.0;
+		void setR(double r);
+		void setV(double v);
 	private:
 		int pin;
 		double K;
+		double R1=10000.0;
+                double V_IN=5.0;
 		double tmin=1000;
                 double tmax=0;
 		double A=1.189148e-3;

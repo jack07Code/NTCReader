@@ -32,3 +32,11 @@ double NTCReader::getMin() {
 double NTCReader::getMax() {
 	return tmax;
 }
+
+void NTCReader::setR(double r) {
+	R1=r;
+}
+
+void NTCReader::setV(double v) {
+	V_IN=v;
+}
